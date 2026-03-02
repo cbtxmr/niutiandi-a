@@ -13,7 +13,6 @@
       font-family: 'Segoe UI', Roboto, 'Microsoft YaHei', sans-serif;
       scroll-behavior: smooth;
     }
-
     body {
       background: linear-gradient(180deg, #1a1c23 0%, #0f1118 100%);
       color: #fff;
@@ -23,7 +22,6 @@
       position: relative;
       overflow-x: hidden;
     }
-
     .bg-particles {
       position: fixed;
       top: 0;
@@ -60,7 +58,6 @@
       pointer-events: none;
       background: transparent;
     }
-
     .top-nav {
       background: linear-gradient(90deg, #165dff, #722ed1);
       color: white;
@@ -74,13 +71,11 @@
       box-shadow: 0 2px 20px rgba(114, 46, 209, 0.3);
       letter-spacing: 1px;
     }
-
     .top-nav i {
       margin-right: 10px;
       color: #c4b0ff;
       animation: pulse 2s infinite;
     }
-
     .status-bar {
       display: flex;
       justify-content: space-between;
@@ -104,7 +99,6 @@
       align-items: center;
       gap: 8px;
     }
-
     .search-container {
       margin: 20px auto 40px;
       width: 90%;
@@ -164,7 +158,6 @@
       border-color: #c4b0ff;
       color: #fff;
     }
-
     .search-suggest {
       position: absolute;
       top: 100%;
@@ -189,7 +182,6 @@
     .suggest-item:hover {
       background: rgba(255, 255, 255, 0.1);
     }
-
     .category-title {
       width: 90%;
       max-width: 1200px;
@@ -214,7 +206,6 @@
     .category-title i {
       color: #c4b0ff;
     }
-
     .nav-container {
       width: 90%;
       max-width: 1200px;
@@ -228,7 +219,6 @@
       grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
       gap: 20px;
     }
-
     .nav-card {
       background: rgba(255, 255, 255, 0.05);
       border-radius: 16px;
@@ -303,7 +293,6 @@
       color: rgba(255, 255, 255, 0.7);
       line-height: 1.5;
     }
-
     .iframe-modal {
       position: fixed;
       top: 0;
@@ -344,7 +333,6 @@
       color: #722ed1;
       transform: rotate(90deg);
     }
-
     .quick-tools {
       position: fixed;
       left: 20px;
@@ -377,7 +365,6 @@
       background: #722ed1;
       box-shadow: 0 0 25px rgba(114, 46, 209, 0.6);
     }
-
     .fun-section {
       width: 90%;
       max-width: 1200px;
@@ -419,7 +406,6 @@
       font-size: 12px;
       color: rgba(255, 255, 255, 0.6);
     }
-
     footer {
       background: linear-gradient(90deg, #165dff, #722ed1);
       color: rgba(255, 255, 255, 0.9);
@@ -448,7 +434,6 @@
       font-size: 13px;
       color: rgba(255, 255, 255, 0.7);
     }
-
     .back-to-top {
       position: fixed;
       bottom: 30px;
@@ -480,7 +465,6 @@
       transform: scale(1.1) translateY(-10px);
       box-shadow: 0 0 30px rgba(114, 46, 209, 0.7);
     }
-
     @keyframes gridMove {
       0% { background-position: 0 0; }
       100% { background-position: 30px 30px; }
@@ -507,7 +491,6 @@
       50% { opacity: 1; }
       100% { opacity: 0.3; }
     }
-
     @media (max-width: 768px) {
       .top-nav {
         font-size: 16px;
@@ -565,16 +548,13 @@
     }
   </style>
 </head>
-
 <body>
   <div class="bg-particles" id="bgParticles"></div>
   <div class="bg-grid"></div>
   <div class="bg-stars" id="bgStars"></div>
-
   <div class="top-nav">
     <i class="fas fa-globe"></i>幻梦次元导航 | 全球ACG资源聚合站
   </div>
-
   <div class="status-bar">
     <div class="datetime" id="datetime">
       <i class="fas fa-clock"></i>
@@ -585,7 +565,6 @@
       <span>当前城市 · 晴 · 22℃</span>
     </div>
   </div>
-
   <div class="search-container" id="searchContainer">
     <i class="fas fa-search search-icon"></i>
     <input type="text" class="search-input" placeholder="输入关键词/网址，回车搜索..." id="searchInput">
@@ -598,7 +577,6 @@
       <div class="search-tab" data-type="zhihu">知乎</div>
     </div>
   </div>
-
   <div class="nav-container">
     <h2 class="category-title"><i class="fas fa-gem"></i>优质资源站</h2>
     <div class="nav-grid">
@@ -634,7 +612,6 @@
       </div>
     </div>
   </div>
-
   <div class="nav-container">
     <h2 class="category-title"><i class="fas fa-gamepad"></i>ACG/趣味</h2>
     <div class="nav-grid">
@@ -670,7 +647,6 @@
       </div>
     </div>
   </div>
-
   <div class="nav-container">
     <h2 class="category-title"><i class="fas fa-gamepad"></i>H-GAME/ACT资源</h2>
     <div class="nav-grid">
@@ -706,7 +682,6 @@
       </div>
     </div>
   </div>
-
   <div class="nav-container">
     <h2 class="category-title"><i class="fas fa-link"></i>小众优质站点</h2>
     <div class="nav-grid">
@@ -742,7 +717,6 @@
       </div>
     </div>
   </div>
-
   <div class="nav-container">
     <h2 class="category-title"><i class="fas fa-tools"></i>实用工具站</h2>
     <div class="nav-grid">
@@ -778,7 +752,6 @@
       </div>
     </div>
   </div>
-
   <div class="fun-section">
     <h2 class="category-title"><i class="fas fa-gamepad"></i>趣味互动</h2>
     <div class="fun-grid">
@@ -804,12 +777,10 @@
       </div>
     </div>
   </div>
-
   <div class="iframe-modal" id="iframeModal">
     <span class="close-modal" id="closeModal"><i class="fas fa-times"></i></span>
     <iframe class="modal-content" id="modalIframe" frameborder="0"></iframe>
   </div>
-
   <div class="quick-tools">
     <button class="tool-btn" title="刷新页面" id="refreshBtn"><i class="fas fa-sync"></i></button>
     <button class="tool-btn" title="夜间/日间模式" id="themeBtn"><i class="fas fa-moon"></i></button>
@@ -817,9 +788,7 @@
     <button class="tool-btn" title="关闭所有标签" id="closeAllBtn"><i class="fas fa-window-close"></i></button>
     <button class="tool-btn" title="添加书签" id="bookmarkBtn"><i class="fas fa-bookmark"></i></button>
   </div>
-
   <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
-
   <footer>
     <div class="footer-contact">
       联系我：<a href="mailto:3132094259@qq.com">3132094259@qq.com</a> | 收录全球优质ACG资源
@@ -828,13 +797,12 @@
       © 2026 幻梦次元导航 | 全球ACG资源聚合站 | 所有链接仅作导航，内容归原站所有
     </div>
   </footer>
-
   <div class="iframe-modal" id="funModal">
     <span class="close-modal" id="closeFunModal"><i class="fas fa-times"></i></span>
     <div class="modal-content" style="background: #1a1c23; padding: 30px; overflow-y: auto;" id="funModalContent"></div>
   </div>
-
   <script>
+    // 1. 背景粒子和星星特效
     (function createParticles() {
       const container = document.getElementById('bgParticles');
       const particleCount = 50;
@@ -875,6 +843,7 @@
       document.head.appendChild(style);
     })();
 
+    // 2. 实时时间更新
     function updateDatetime() {
       const now = new Date();
       const year = now.getFullYear();
@@ -890,18 +859,17 @@
     updateDatetime();
     setInterval(updateDatetime, 1000);
 
+    // 3. 搜索功能（输入联想+标签跳转+回车搜索）
     const searchInput = document.getElementById('searchInput');
     const searchSuggest = document.getElementById('searchSuggest');
     const searchContainer = document.getElementById('searchContainer');
     const searchTabs = document.querySelectorAll('.search-tab');
     const hotKeywords = ['ACG资源', '破解软件', '网盘资源', '成人游戏', '音乐下载', '免费工具', '动漫资源', '学术论文', '无损音乐', 'ACT游戏', 'H-GAME'];
-
+    
+    // 输入联想
     searchInput.addEventListener('input', function() {
       const val = this.value.trim();
-      if (val === '') {
-        searchSuggest.classList.remove('active');
-        return;
-      }
+      val === '' ? searchSuggest.classList.remove('active') : '';
       const matches = hotKeywords.filter(keyword => keyword.includes(val));
       if (matches.length > 0) {
         searchSuggest.innerHTML = matches.map(word => `<div class="suggest-item">${word}</div>`).join('');
@@ -910,14 +878,16 @@
         searchSuggest.classList.remove('active');
       }
     });
-
+    
+    // 点击联想词填充输入框
     searchSuggest.addEventListener('click', function(e) {
       if (e.target.classList.contains('suggest-item')) {
         searchInput.value = e.target.textContent;
         this.classList.remove('active');
       }
     });
-
+    
+    // 搜索标签跳转（百度/谷歌等）
     searchTabs.forEach(tab => {
       tab.addEventListener('click', function() {
         const val = searchInput.value.trim();
@@ -933,7 +903,8 @@
         window.open(url, '_blank');
       });
     });
-
+    
+    // 回车搜索（支持直接输入网址）
     searchInput.addEventListener('keydown', function(e) {
       if (e.key === 'Enter' && this.value.trim() !== '') {
         const val = this.value.trim();
@@ -946,30 +917,31 @@
         searchSuggest.classList.remove('active');
       }
     });
-
+    
+    // 点击页面其他地方关闭联想框
     document.addEventListener('click', function(e) {
-      if (!searchContainer.contains(e.target)) {
-        searchSuggest.classList.remove('active');
-      }
+      !searchContainer.contains(e.target) ? searchSuggest.classList.remove('active') : '';
     });
 
+    // 4. 资源卡片点击弹窗打开链接（带爆炸特效）
     const navCards = document.querySelectorAll('.nav-card');
     const iframeModal = document.getElementById('iframeModal');
     const modalIframe = document.getElementById('modalIframe');
     const closeModal = document.getElementById('closeModal');
-
+    
     navCards.forEach(card => {
       card.addEventListener('click', function(e) {
-        createExplosion(e.clientX, e.clientY);
+        createExplosion(e.clientX, e.clientY); // 点击爆炸特效
         const url = this.getAttribute('data-url');
         modalIframe.src = url;
         setTimeout(() => {
           iframeModal.classList.add('active');
-          document.body.style.overflow = 'hidden';
+          document.body.style.overflow = 'hidden'; // 禁止页面滚动
         }, 300);
       });
     });
-
+    
+    // 爆炸特效函数
     function createExplosion(x, y) {
       const explosionCount = 15;
       for (let i = 0; i < explosionCount; i++) {
@@ -985,35 +957,31 @@
         particle.style.animation = `explode 0.6s ease-out forwards`;
         particle.style.zIndex = '9999';
         document.body.appendChild(particle);
-        setTimeout(() => {
-          particle.remove();
-        }, 600);
+        setTimeout(() => particle.remove(), 600); // 600ms后移除粒子
       }
     }
-
+    
+    // 关闭资源弹窗
     closeModal.addEventListener('click', function() {
-      modalIframe.src = '';
+      modalIframe.src = ''; // 清空iframe防止缓存
       iframeModal.classList.remove('active');
-      document.body.style.overflow = '';
+      document.body.style.overflow = ''; // 恢复页面滚动
     });
-
     iframeModal.addEventListener('click', function(e) {
-      if (e.target === this) {
-        closeModal.click();
-      }
+      e.target === this ? closeModal.click() : ''; // 点击弹窗背景关闭
     });
 
+    // 5. 右侧工具按钮功能
     const refreshBtn = document.getElementById('refreshBtn');
     const themeBtn = document.getElementById('themeBtn');
     const randomBtn = document.getElementById('randomBtn');
     const closeAllBtn = document.getElementById('closeAllBtn');
     const bookmarkBtn = document.getElementById('bookmarkBtn');
     let isDarkTheme = true;
-
-    refreshBtn.addEventListener('click', function() {
-      location.reload();
-    });
-
+    
+    refreshBtn.addEventListener('click', () => location.reload()); // 刷新页面
+    
+    // 夜间/日间模式切换
     themeBtn.addEventListener('click', function() {
       isDarkTheme = !isDarkTheme;
       const body = document.body;
@@ -1026,17 +994,14 @@
         body.style.color = '#222';
         this.innerHTML = '<i class="fas fa-sun"></i>';
       }
+      // 同步更新卡片、输入框等背景色
       document.querySelectorAll('.nav-card, .fun-card, .search-input, .search-suggest').forEach(el => {
-        if (isDarkTheme) {
-          el.style.background = 'rgba(255, 255, 255, 0.05)';
-          el.style.color = '#fff';
-        } else {
-          el.style.background = 'white';
-          el.style.color = '#222';
-        }
+        isDarkTheme ? (el.style.background = 'rgba(255, 255, 255, 0.05)', el.style.color = '#fff') : 
+                      (el.style.background = 'white', el.style.color = '#222');
       });
     });
-
+    
+    // 随机访问资源站
     randomBtn.addEventListener('click', function() {
       const urls = Array.from(navCards).map(card => card.getAttribute('data-url'));
       const randomUrl = urls[Math.floor(Math.random() * urls.length)];
@@ -1044,12 +1009,14 @@
       iframeModal.classList.add('active');
       document.body.style.overflow = 'hidden';
     });
-
+    
+    // 关闭所有标签（刷新当前页）
     closeAllBtn.addEventListener('click', function() {
       window.open('', '_self').close();
       location.reload();
     });
-
+    
+    // 添加书签
     bookmarkBtn.addEventListener('click', function() {
       if (window.sidebar && window.sidebar.addPanel) {
         window.sidebar.addPanel(document.title, window.location.href, '');
@@ -1060,6 +1027,7 @@
       }
     });
 
+    // 6. 趣味互动功能（骰子+幸运签+词云+贪吃蛇）
     const funModal = document.getElementById('funModal');
     const funModalContent = document.getElementById('funModalContent');
     const closeFunModal = document.getElementById('closeFunModal');
@@ -1067,12 +1035,14 @@
     const fortuneCookie = document.getElementById('fortuneCookie');
     const wordCloud = document.getElementById('wordCloud');
     const miniGame = document.getElementById('miniGame');
-
+    
+    // 关闭趣味互动弹窗
     closeFunModal.addEventListener('click', function() {
       funModal.classList.remove('active');
       document.body.style.overflow = '';
     });
 
+    // 6.1 随机骰子
     diceGame.addEventListener('click', function() {
       const diceNum = Math.floor(Math.random() * 6) + 1;
       funModalContent.innerHTML = `
@@ -1085,11 +1055,10 @@
       `;
       funModal.classList.add('active');
       document.body.style.overflow = 'hidden';
-      document.getElementById('reRollDice').addEventListener('click', function() {
-        diceGame.click();
-      });
+      document.getElementById('reRollDice').addEventListener('click', () => diceGame.click());
     });
 
+    // 6.2 幸运签
     const fortunes = [
       '今日好运连连，万事顺遂！',
       '遇到困难别放弃，转机就在眼前～',
@@ -1101,7 +1070,7 @@
       '平安喜乐，无灾无难～'
     ];
     fortuneCookie.addEventListener('click', function() {
-      const randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
+            const randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
       funModalContent.innerHTML = `
         <div style="text-align: center; padding: 50px 0;">
           <i class="fas fa-scroll" style="font-size: 60px; color: #ff8a00; margin-bottom: 30px;"></i>
@@ -1110,3 +1079,186 @@
         </div>
       `;
       funModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      document.getElementById('reDrawFortune').addEventListener('click', () => fortuneCookie.click());
+    });
+
+    // 6.3 词云生成（完整功能）
+    wordCloud.addEventListener('click', function() {
+      funModalContent.innerHTML = `
+        <div style="text-align: center; padding: 30px 0;">
+          <h2 style="color: #fff; margin-bottom: 20px;">输入文字生成词云</h2>
+          <textarea id="wordCloudText" style="width: 80%; height: 150px; padding: 15px; border-radius: 12px; background: rgba(255,255,255,0.1); color: #fff; border: 1px solid #c4b0ff; margin-bottom: 20px; resize: none;" placeholder="请输入大量文字，用空格/逗号分隔关键词..."></textarea>
+          <button id="generateWordCloud" style="padding: 10px 25px; border-radius: 20px; background: #722ed1; color: white; border: none; cursor: pointer; margin-right: 10px;">生成词云</button>
+          <div id="wordCloudResult" style="margin-top: 30px; padding: 20px; border-radius: 12px; background: rgba(255,255,255,0.05); min-height: 100px; display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-cloud" style="font-size: 60px; color: #c4b0ff; opacity: 0.5;"></i>
+          </div>
+        </div>
+      `;
+      funModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      document.getElementById('generateWordCloud').addEventListener('click', function() {
+        const text = document.getElementById('wordCloudText').value.trim();
+        if (!text) {
+          alert('请输入文字内容！');
+          return;
+        }
+        const keywords = text.split(/[,，\s]+/).filter(word => word);
+        let wordCloudHtml = '';
+        keywords.forEach(word => {
+          const size = Math.random() * 16 + 14; // 字体14-30px随机
+          const color = `rgba(${Math.floor(Math.random() * 100 + 155)}, ${Math.floor(Math.random() * 100 + 155)}, 255, ${Math.random() * 0.5 + 0.5})`;
+          const rotate = Math.random() * 20 - 10; // 旋转-10~10度
+          wordCloudHtml += `<span style="font-size: ${size}px; color: ${color}; margin: 0 8px; transform: rotate(${rotate}deg); display: inline-block; margin-bottom: 10px;">${word}</span>`;
+        });
+        document.getElementById('wordCloudResult').innerHTML = wordCloudHtml;
+      });
+    });
+
+    // 6.4 迷你贪吃蛇（完整功能）
+    miniGame.addEventListener('click', function() {
+      funModalContent.innerHTML = `
+        <div style="text-align: center; padding: 20px 0;">
+          <h2 style="color: #fff; margin-bottom: 15px;">迷你贪吃蛇</h2>
+          <div id="snakeGame" style="width: 300px; height: 300px; border: 2px solid #c4b0ff; margin: 0 auto; background: rgba(0,0,0,0.3); position: relative;"></div>
+          <p style="color: rgba(255,255,255,0.7); margin: 15px 0;">方向键控制蛇移动 | 吃到红色食物加分</p>
+          <p style="color: rgba(255,255,255,0.5); font-size: 14px;">当前分数：<span id="snakeScore">0</span></p>
+          <button id="startSnake" style="padding: 8px 20px; border-radius: 20px; background: #722ed1; color: white; border: none; cursor: pointer; margin-right: 10px;">开始游戏</button>
+          <button id="pauseSnake" style="padding: 8px 20px; border-radius: 20px; background: #165dff; color: white; border: none; cursor: pointer;">暂停</button>
+        </div>
+      `;
+      funModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+
+      let snake = [{x: 15, y: 15}];
+      let food = {x: 5, y: 5};
+      let direction = 'right';
+      let isGameOver = false;
+      let gameInterval;
+      let score = 0;
+      const gridSize = 10;
+      const gameSize = 30;
+
+      // 绘制游戏元素
+      function drawGame() {
+        const game = document.getElementById('snakeGame');
+        game.innerHTML = '';
+        // 绘制蛇身
+        snake.forEach(segment => {
+          const snakeSeg = document.createElement('div');
+          snakeSeg.style.position = 'absolute';
+          snakeSeg.style.width = `${gridSize}px`;
+          snakeSeg.style.height = `${gridSize}px`;
+          snakeSeg.style.left = `${segment.x * gridSize}px`;
+          snakeSeg.style.top = `${segment.y * gridSize}px`;
+          snakeSeg.style.background = '#c4b0ff';
+          snakeSeg.style.borderRadius = '3px';
+          game.appendChild(snakeSeg);
+        });
+        // 绘制食物
+        const foodEl = document.createElement('div');
+        foodEl.style.position = 'absolute';
+        foodEl.style.width = `${gridSize}px`;
+        foodEl.style.height = `${gridSize}px`;
+        foodEl.style.left = `${food.x * gridSize}px`;
+        foodEl.style.top = `${food.y * gridSize}px`;
+        foodEl.style.background = '#ff8a00';
+        foodEl.style.borderRadius = '50%';
+        game.appendChild(foodEl);
+        // 更新分数
+        document.getElementById('snakeScore').textContent = score;
+      }
+
+      // 生成随机食物（不重叠蛇身）
+      function generateFood() {
+        let newFood;
+        do {
+          newFood = {
+            x: Math.floor(Math.random() * gameSize),
+            y: Math.floor(Math.random() * gameSize)
+          };
+        } while (snake.some(seg => seg.x === newFood.x && seg.y === newFood.y));
+        food = newFood;
+      }
+
+      // 蛇移动逻辑
+      function moveSnake() {
+        if (isGameOver) return;
+        const head = {...snake[0]};
+        // 根据方向更新蛇头位置
+        switch (direction) {
+          case 'up': head.y--; break;
+          case 'down': head.y++; break;
+          case 'left': head.x--; break;
+          case 'right': head.x++; break;
+        }
+        // 碰撞检测（边界+自身）
+        if (head.x < 0 || head.x >= gameSize || head.y < 0 || head.y >= gameSize ||
+            snake.some(seg => seg.x === head.x && seg.y === head.y)) {
+          isGameOver = true;
+          clearInterval(gameInterval);
+          alert(`游戏结束！最终分数：${score}`);
+          return;
+        }
+        snake.unshift(head); // 添加新蛇头
+        // 吃到食物加分，否则移除蛇尾（保持长度）
+        if (head.x === food.x && head.y === food.y) {
+          score += 10;
+          generateFood();
+        } else {
+          snake.pop();
+        }
+        drawGame();
+      }
+
+      // 方向键控制（防止反向掉头）
+      document.addEventListener('keydown', function(e) {
+        switch (e.key) {
+          case 'ArrowUp': if (direction !== 'down') direction = 'up'; break;
+          case 'ArrowDown': if (direction !== 'up') direction = 'down'; break;
+          case 'ArrowLeft': if (direction !== 'right') direction = 'left'; break;
+          case 'ArrowRight': if (direction !== 'left') direction = 'right'; break;
+        }
+      });
+
+      // 开始/重置游戏
+      document.getElementById('startSnake').addEventListener('click', function() {
+        if (!isGameOver && gameInterval) return;
+        isGameOver = false;
+        snake = [{x: 15, y: 15}];
+        direction = 'right';
+        score = 0;
+        generateFood();
+        clearInterval(gameInterval);
+        gameInterval = setInterval(moveSnake, 150); // 控制移动速度
+        drawGame();
+      });
+
+      // 暂停/继续游戏
+      document.getElementById('pauseSnake').addEventListener('click', function() {
+        if (isGameOver) return;
+        if (gameInterval) {
+          clearInterval(gameInterval);
+          gameInterval = null;
+          this.textContent = '继续';
+        } else {
+          gameInterval = setInterval(moveSnake, 150);
+          this.textContent = '暂停';
+        }
+      });
+
+      drawGame(); // 初始绘制游戏界面
+    });
+
+    // 7. 回到顶部功能
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', function() {
+      window.scrollY > 300 ? backToTop.classList.add('show') : backToTop.classList.remove('show');
+    });
+    backToTop.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+  </script>
+</body>
+</html>
